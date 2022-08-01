@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-import { BrowserRoute, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
+import OurWorks from './pages/OurWorks';
+import ContactUs from './pages/ContactUs';
 
 
 
@@ -11,11 +13,13 @@ import { BrowserRoute, Route, Routes} from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-            <BrowserRoute>
+            <BrowserRouter>
                   <Routes>
                         <Route path="/" element={<App />} />
+                        <Route path="/works" element={<OurWorks />} />
+                        <Route path="/contact" element={<ContactUs />} />
                   </Routes>
-            </BrowserRoute>      
+            </BrowserRouter>      
 
       
 

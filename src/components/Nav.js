@@ -5,11 +5,11 @@ import {Link} from "react-router-dom";
 const Nav = () => {
     return (
         <StyledNav>
-            <h1><a href="#" id='logo'>Capture</a></h1>
+            <h1><a id='logo'><Link to= "/">Capture</Link></a></h1>
             <ul>
                 <li>
                     
-                    <Link to="/about">AboutUs</Link>  | {""}    
+                    <Link to="/">AboutUs</Link>  | {""}    
         
                 </li>
                 <li>
