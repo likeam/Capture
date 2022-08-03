@@ -42,6 +42,7 @@ const Work = styled.div`
     background: #1b1b1b;
     h2{
         padding: 1rem 0rem;
+        color: white;
     }
 `;
 

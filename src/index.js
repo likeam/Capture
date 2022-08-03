@@ -6,6 +6,7 @@ import App from './App';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import OurWorks from './pages/OurWorks';
 import ContactUs from './pages/ContactUs';
+import MovieDetail from './pages/MovieDetail';
 
 
 
@@ -15,8 +16,9 @@ root.render(
 
             <BrowserRouter>
                   <Routes>
-                        <Route path="/" element={<App />} />
-                        <Route path="/works" element={<OurWorks />} />
+                        <Route path="/" exact element={<App />} />
+                        <Route path="/works" exact element={<OurWorks />} />
+                        <Route path="/works/:id" element={<MovieDetail />} />
                         <Route path="/contact" element={<ContactUs />} />
                   </Routes>
             </BrowserRouter>      
