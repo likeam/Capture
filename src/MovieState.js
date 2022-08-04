@@ -1,3 +1,4 @@
+import React from 'react';
 //Import Images
 import athlete from './img/athlete-small.png';
 import goodtimes from './img/goodtimes-small.png';
@@ -5,7 +6,7 @@ import theracer from './img/theracer-small.png';
 import athlete2 from './img/athlete2.png';
 import goodtimes2 from './img/good-times2.jpg';
 
-const MovieState = () => {
+const MovieState = function()  {
     return [
         {
             title: 'The Athlete',
@@ -72,4 +73,5 @@ const MovieState = () => {
     ]
 }
 
-export default MovieState
+export default MovieState;
+
