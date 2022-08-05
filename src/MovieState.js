@@ -12,7 +12,7 @@ const MovieState = function()  {
             title: 'The Athlete',
             mainImg: athlete,
             secondaryImg: athlete2,
-            url: '/work/the-athlete',
+            url: "/work/the-athlete",
             awards: [
                 {
                     title: 'Truly A Masterpiece',
