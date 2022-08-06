@@ -1,6 +1,11 @@
 import AboutUs from "./pages/AboutUs";
-import GlobalStyle from "./components/GlobalStyle";
-import Nav from "./components/Nav";
+
+// import reportWebVitals from './reportWebVitals';
+
+import { BrowserRouter, Route, Routes} from "react-router-dom";
+import OurWorks from './pages/OurWorks';
+import ContactUs from './pages/ContactUs';
+import MovieDetail from './pages/MovieDetail';
 
 
 
@@ -11,12 +16,16 @@ import Nav from "./components/Nav";
 function App() {
   return (
 
-  <div>
-    <Nav />
-    <GlobalStyle />
-    <AboutUs />
-  </div>
-  );
+
+    <BrowserRouter>
+      <Routes>
+            <Route path="/" exact element={<App />} />
+            <Route path="/works" exact element={<OurWorks />} />
+            <Route path="/works/:id" element={<MovieDetail />} />
+            <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+    </BrowserRouter>   
+    );
 }
 
 export default App;

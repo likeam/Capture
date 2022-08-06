@@ -16,15 +16,15 @@ const MovieState = function()  {
             awards: [
                 {
                     title: 'Truly A Masterpiece',
-                     discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
+                    discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 },
                 {
                     title: 'Fresh look on a brutal sport.',
-               discription:  '" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
+                    discription:  '" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 },
                 {
                     title: 'Its okay lmao',
-                discription:  '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
+                    discription:  '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 }
             ],
         },
@@ -37,15 +37,15 @@ const MovieState = function()  {
             awards: [
                 {
                     title: 'Truly A Masterpiece',
-                     discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
+                    discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 },
                 {
                     title: 'Fresh look on a brutal sport.',
-                 discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
+                    discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 },
                 {
                     title: 'Its okay lmao',
-                 discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
+                    discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 }
             ],
         },
@@ -58,15 +58,15 @@ const MovieState = function()  {
             awards: [
                 {
                     title: 'Truly A Masterpiece',
-                     discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
+                    discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 },
                 {
                     title: 'Fresh look on a brutal sport.',
-                 discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
+                    discription: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 },
                 {
                     title: 'Its okay lmao',
-                discription:  '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
+                    discription:  '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 }
             ],
         }
