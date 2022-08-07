@@ -18,17 +18,17 @@ const OurWorks = () => {
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
-                <Link to="/"> <img src={athlete} alt="athele pic" /> </Link>
+                <Link to="/the-athlete"> <img src={athlete} alt="athele pic" /> </Link>
             </Movie>
             <Movie>
                 <h2>The Racer</h2>
                 <div className="line"></div>
-                <Link to="/"> <img src={theracer} alt="racer pic" /> </Link>
+                <Link to="/the-race"> <img src={theracer} alt="racer pic" /> </Link>
             </Movie>
             <Movie>
                 <h2>Good Times</h2>
                 <div className="line"></div>
-                <Link to= "/"> <img src={goodtimes} alt="goodtime pic" /> </Link>
+                <Link to= "/goodtime"> <img src={goodtimes} alt="goodtime pic" /> </Link>
             </Movie>
         </Work>
         </div>

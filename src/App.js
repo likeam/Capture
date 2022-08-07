@@ -19,7 +19,7 @@ function App() {
 
     <BrowserRouter>
       <Routes>
-            <Route path="/" exact element={<App />} />
+            <Route path="/" exact element={<AboutUs />} />
             <Route path="/works" exact element={<OurWorks />} />
             <Route path="/works/:id" element={<MovieDetail />} />
             <Route path="/contact" element={<ContactUs />} />

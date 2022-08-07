@@ -2,14 +2,15 @@ import React from 'react'
 import home1 from '../img/home1.png';
 //Styled
 import {About,  Discription, Image, Hide } from '../style';
-
+//Framer Motion
+import {motion} from 'framer-motion';
 const AboutSection = () => {
     return (
         <About>
             <Discription>
                 <div className="title">
                     <Hide>
-                        <h2>We work to  make</h2>
+                       < motion.h2> animate{{opacity: 1}} initial{{opacity: 0}}>We work to  make</motion.h2>
                     </Hide>
                     <Hide>
                         <h2>your <span>dreams</span> come</h2>

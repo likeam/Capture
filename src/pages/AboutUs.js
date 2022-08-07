@@ -8,12 +8,11 @@ import Nav from "../components/Nav";
 const AboutUs = () => {
     return (
         <div>
-             <Nav />
+            <Nav />
             <GlobalStyle />
             <AboutSection />
             <ServicesSection />
             <FaqSection />
-
         </div>
         
     )
