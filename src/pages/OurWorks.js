@@ -6,12 +6,15 @@ import athlete from '../img/athlete-small.png';
 import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
 import Nav from '../components/Nav';
+//Animation
+import {motion} from 'framer-motion';
+import { pageAnimation } from './animation';
 
 
 
 const OurWorks = () => {
     return (
-        <div>
+        <motion.div variants= {pageAnimation} initial = "hidden" animate = "show" exit= "exit">
             <Nav />
         <Work>
         
@@ -31,7 +34,7 @@ const OurWorks = () => {
                 <Link to= "/goodtime"> <img src={goodtimes} alt="goodtime pic" /> </Link>
             </Movie>
         </Work>
-        </div>
+        </motion.div>
     )
 }
 

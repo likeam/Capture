@@ -7,6 +7,10 @@ import OurWorks from './pages/OurWorks';
 import ContactUs from './pages/ContactUs';
 import MovieDetail from './pages/MovieDetail';
 
+//Animation
+import { AnimatePresence } from "framer-motion";
+
+
 
 
 
@@ -14,17 +18,23 @@ import MovieDetail from './pages/MovieDetail';
 
 
 function App() {
+
+
+
+
   return (
+  
 
-
-    <BrowserRouter>
-      <Routes>
-            <Route path="/" exact element={<AboutUs />} />
-            <Route path="/works" exact element={<OurWorks />} />
-            <Route path="/works/:id" element={<MovieDetail />} />
-            <Route path="/contact" element={<ContactUs />} />
-      </Routes>
-    </BrowserRouter>   
+    <AnimatePresence>
+      <BrowserRouter>
+        <Routes>
+              <Route path="/" exact element={<AboutUs />} />
+              <Route path="/works" exact element={<OurWorks />} />
+              <Route path="/works/:id" element={<MovieDetail />} />
+              <Route path="/contact" element={<ContactUs />} />
+        </Routes>
+      </BrowserRouter>  
+    </AnimatePresence> 
     );
 }
 

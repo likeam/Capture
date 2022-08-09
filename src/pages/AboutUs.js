@@ -4,16 +4,19 @@ import FaqSection from '../components/FaqSection'
 import ServicesSection from '../components/ServicesSection'
 import GlobalStyle from "../components/GlobalStyle";
 import Nav from "../components/Nav";
+//Animation
+import {motion} from 'framer-motion';
+import { pageAnimation } from './animation';
 
 const AboutUs = () => {
     return (
-        <div>
+        <motion.div variants= {pageAnimation} initial = "hidden" animate = "show" exit= "exit" >
             <Nav />
             <GlobalStyle />
             <AboutSection />
             <ServicesSection />
             <FaqSection />
-        </div>
+        </motion.div>
         
     )
 }
