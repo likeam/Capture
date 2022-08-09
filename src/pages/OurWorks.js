@@ -8,7 +8,7 @@ import goodtimes from '../img/goodtimes-small.png';
 import Nav from '../components/Nav';
 //Animation
 import {motion} from 'framer-motion';
-import { pageAnimation } from './animation';
+import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from './animation';
 
 
 
@@ -16,22 +16,46 @@ const OurWorks = () => {
     return (
         <motion.div variants= {pageAnimation} initial = "hidden" animate = "show" exit= "exit">
             <Nav />
-        <Work>
+        <Work 
+        style={{ background: "#fff"}}
+        exit= "exit"
+        variants= {pageAnimation}
+        initial ="hidden"
+        animate = "show"
+        >
+            <motion.div variants={sliderContainer} >
+                <Frame1 variants={slider} ></Frame1>
+                <Frame2 variants={slider} ></Frame2>
+                <Frame3 variants={slider} ></Frame3>
+                <Frame4 variants={slider} ></Frame4>
+            </motion.div>
         
             <Movie>
-                <h2>The Athlete</h2>
-                <div className="line"></div>
-                <Link to="/the-athlete"> <img src={athlete} alt="athele pic" /> </Link>
+                <motion.h2 variants={fade} >The Athlete</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Link to="/the-athlete"> 
+                    <Hide>
+                        <motion.img variants={photoAnim} src={athlete} alt="athele pic" /> 
+                    </Hide>
+                </Link>
             </Movie>
             <Movie>
-                <h2>The Racer</h2>
-                <div className="line"></div>
-                <Link to="/the-race"> <img src={theracer} alt="racer pic" /> </Link>
+                <motion.h2 variants={fade} >The Racer</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Link to="/the-race"> 
+                    <Hide>
+                        <motion.img variants={photoAnim} src={theracer} alt="racer pic" /> 
+                    </Hide>
+                </Link>
             </Movie>
             <Movie>
-                <h2>Good Times</h2>
-                <div className="line"></div>
-                <Link to= "/goodtime"> <img src={goodtimes} alt="goodtime pic" /> </Link>
+                <motion.h2 variants={fade} >Good Times</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Link to= "/goodtime">
+                    <Hide>
+                        <motion.img variants={photoAnim} src={goodtimes} alt="goodtime pic" /> 
+                    </Hide>
+                </Link>
             </Movie>
         </Work>
         </motion.div>
@@ -42,10 +66,10 @@ const Work = styled.div`
     min-height: 90vh;
     overflow: hidden;
     padding: 5rem 10rem;
-    background: #1b1b1b;
+    background: white;
     h2{
         padding: 1rem 0rem;
-        color: white;
+        
     }
 `;
 
@@ -53,7 +77,7 @@ const Movie = styled.div`
     padding-bottom: 10rem;
     .line{
         height: 0.5rem;
-        background: #cccccc;
+        background: #23d997;
         margin-bottom: 3rem;
     }
     img{
@@ -62,4 +86,30 @@ const Movie = styled.div`
         object-fit: cover ;
     }
 `;
+
+const Hide = styled.div`
+    overflow: hidden;
+`;
+
+//Frame Animation
+const Frame1 = styled(motion.div)`
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 10%;
+    height: 100vh;
+    background: #fffebf;
+    z-index: 2;
+`;
+const Frame2 = styled(Frame1)`
+    background: #ff8efb;
+`;
+const Frame3 = styled(Frame1)`
+    background: #8ed2ff;
+`;
+const Frame4 = styled(Frame1)`
+    background: #8effa0;
+`;
+
+
 export default OurWorks

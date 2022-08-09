@@ -66,6 +66,7 @@ const MovieState = function()  {
                 },
                 {
                     title: 'Its okay lmao',
+                    
                     discription:  '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea? "',               
                 }
             ],
