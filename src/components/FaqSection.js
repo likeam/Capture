@@ -18,7 +18,6 @@ const FaqSection = () => {
                         <p>Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt!</p>
                     </div>
-        
             </Toggle>
             <Toggle title= "Daily Schudule">
             
@@ -26,10 +25,8 @@ const FaqSection = () => {
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt!</p>
                 </div>
-          
             </Toggle>
             <Toggle title= "Different Payment Methods">
-          
                 <div className="answer ">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt!</p>
@@ -37,7 +34,6 @@ const FaqSection = () => {
         
             </Toggle>
             <Toggle title= "What Product do you offer.">
-           
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt!</p>
